@@ -1,0 +1,13 @@
+---
+- name: Ping Playbook
+  hosts: localhost
+  gather_facts: false
+  
+  vars:
+    target_ip: "172.16.60.104"  # Replace with the desired IP address
+  
+  tasks:
+    - name: Ping host
+      ping:
+      when: inventory_hostname == "localhost"  # Only run the task on the local machine
+      delegate_to: "{{ target_ip }}"
