@@ -7,10 +7,6 @@
     target_ip: "172.16.60.104"  # Replace with the desired IP address
   
   tasks:
-    - name: Disable SSH host key checking
-      environment:
-        ANSIBLE_HOST_KEY_CHECKING: "False"
-  
     - name: Ping host
       ping:
       when: inventory_hostname == "localhost"  # Only run the task on the local machine

@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": "file:///Users/erolgurcinar/Desktop/IBMCLOUD/IBM_Sec_BTS_Lab/ibm_soar_ansible/ibm_soar_ansible/ping.yml"
+    }
+}
